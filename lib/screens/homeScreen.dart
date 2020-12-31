@@ -72,7 +72,7 @@ class HomeScreen extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
-                  'Top Doctors',
+                  'Doctors',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: kTitleTextColor,
@@ -100,7 +100,7 @@ class HomeScreen extends StatelessWidget {
             width: 30,
           ),
           CategoryCard(
-            'Dental\nSurgeon',
+            'Dentists',
             'assets/icons/dental_surgeon.png',
             kBlueColor,
           ),
@@ -108,7 +108,7 @@ class HomeScreen extends StatelessWidget {
             width: 10,
           ),
           CategoryCard(
-            'Heart\nSurgeon',
+            'Cardiologists',
             'assets/icons/heart_surgeon.png',
             kYellowColor,
           ),
@@ -116,7 +116,7 @@ class HomeScreen extends StatelessWidget {
             width: 10,
           ),
           CategoryCard(
-            'Eye\nSpecialist',
+            'Ophthalmologists',
             'assets/icons/eye_specialist.png',
             kOrangeColor,
           ),
@@ -136,18 +136,18 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         children: <Widget>[
           DoctorCard(
-            'Dr. Stella Kane',
-            'Heart Surgeon - Flower Hospitals',
-            'assets/images/doctor1.png',
+            'Dr. Mohamed BEN KHLIFA',
+            'Ophthalmologist - Clinique les Oliviers',
+            'assets/images/doctor2.png',
             kBlueColor,
           ),
           SizedBox(
             height: 20,
           ),
           DoctorCard(
-            'Dr. Joseph Cart',
-            'Dental Surgeon - Flower Hospitals',
-            'assets/images/doctor2.png',
+            'Dr. Eya BEN SWAYAH',
+            'Cardiologist - Flower Hospitals',
+            'assets/images/doctor1.png',
             kYellowColor,
           ),
           SizedBox(

@@ -1,4 +1,5 @@
 import 'package:doctor_patient_app/components/schedule_card.dart';
+import 'package:doctor_patient_app/screens/chat_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -115,14 +116,22 @@ class DetailScreen extends StatelessWidget {
                                   SizedBox(
                                     width: 16,
                                   ),
-                                  Container(
-                                    padding: EdgeInsets.all(10),
-                                    decoration: BoxDecoration(
-                                      color: kYellowColor.withOpacity(0.1),
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                    child: SvgPicture.asset(
-                                      'assets/icons/chat.svg',
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) {
+                                        return ChatDetailPage();
+                                      }));
+                                    },
+                                    child: Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        color: kYellowColor.withOpacity(0.1),
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                      child: SvgPicture.asset(
+                                        'assets/icons/chat.svg',
+                                      ),
                                     ),
                                   ),
                                   SizedBox(
@@ -159,7 +168,7 @@ class DetailScreen extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        'Dr. Stella is the top most heart surgeon in Flower\nHospital. She has done over 100 successful sugeries\nwithin past 3 years. She has achieved several\nawards for her wonderful contribution in her own\nfield. She’s available for private consultation for\ngiven schedules.',
+                        'Dr. BEN KHLIFA is the top most eyes surgeon in Flower\nHospital. HE has done over 100 successful sugeries\nwithin past 3 years. He has achieved several\nawards for her wonderful contribution in her own\nfield. He\'s available for private consultation for\ngiven schedules.',
                         style: TextStyle(
                           height: 1.6,
                           color: kTitleTextColor.withOpacity(0.7),

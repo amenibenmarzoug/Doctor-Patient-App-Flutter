@@ -30,7 +30,7 @@ class WelcomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Choose The Doctor\nYou Want',
+                      'CORONASUIVI',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 32,
@@ -41,7 +41,7 @@ class WelcomeScreen extends StatelessWidget {
                       height: 20,
                     ),
                     Text(
-                      'Lorem ipsum dolor amet, consectetur\nadipiscing inet deli',
+                      'Choose The Doctor You Want.',
                       style: TextStyle(
                         fontSize: 16,
                         color: kTitleTextColor.withOpacity(0.7),

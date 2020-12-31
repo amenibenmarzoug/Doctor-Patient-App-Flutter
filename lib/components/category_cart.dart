@@ -21,7 +21,7 @@ class CategoryCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
             ),
             child: Container(
-              width: 110,
+              width: 130,
               height: 137,
               padding: EdgeInsets.symmetric(
                 horizontal: 16,
