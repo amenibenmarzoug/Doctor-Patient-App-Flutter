@@ -1,7 +1,7 @@
 import 'package:doctor_patient_app/constant.dart';
 import 'package:flutter/material.dart';
 
-import 'homeScreen.dart';
+import 'login.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -55,7 +55,7 @@ class WelcomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomeScreen(),
+                            builder: (context) => LoginScreen(),
                           ),
                         );
                       },
